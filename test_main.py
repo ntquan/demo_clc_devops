@@ -26,6 +26,13 @@ class TestCalculateFunctions(unittest.TestCase):
         self.assertEqual(sum_two_numbers(-1, 1), 0)
         self.assertEqual(sum_two_numbers(0, 0), 0)
 
+    # Additional test for multiply_two_numbers function
+    def test_multiply_two_numbers(self):
+        from main import multiply_two_numbers
+        self.assertEqual(multiply_two_numbers(2, 3), 6)
+        self.assertEqual(multiply_two_numbers(-1, 1), -1)
+        self.assertEqual(multiply_two_numbers(0, 5), 0)
+
 
 if __name__ == '__main__':
     unittest.main()

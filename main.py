@@ -27,6 +27,10 @@ def get_numbers_from_user():
 def sum_two_numbers(a, b):
     return a + b
 
+# multiply 2 number
+def multiply_two_numbers(a, b):
+    return a * b
+
 # Main function
 if __name__ == "__main__":
     numbers = get_numbers_from_user()
