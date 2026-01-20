@@ -23,7 +23,7 @@ class TestCalculateFunctions(unittest.TestCase):
     def test_sum_two_numbers(self):
         from main import sum_two_numbers
         self.assertEqual(sum_two_numbers(2, 3), 5)
-        self.assertEqual(sum_two_numbers(-1, 1), 2)
+        self.assertEqual(sum_two_numbers(-1, 1), 0)
         self.assertEqual(sum_two_numbers(0, 0), 0)
 
 
