@@ -19,5 +19,13 @@ class TestCalculateFunctions(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculate_sum_and_average(["a", "b", "c"])
 
+    # Additional test for sum_two_numbers function
+    def test_sum_two_numbers(self):
+        from main import sum_two_numbers
+        self.assertEqual(sum_two_numbers(2, 3), 5)
+        self.assertEqual(sum_two_numbers(-1, 1), 1)
+        self.assertEqual(sum_two_numbers(0, 0), 0)
+
+
 if __name__ == '__main__':
     unittest.main()
